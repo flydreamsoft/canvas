@@ -37,82 +37,92 @@
 						{p:[{x:400,y:400},{x:600,y:600},{x:400,y:800},{x:200,y:600}],color:"#a54c09"},
 						{p:[{x:200,y:600},{x:400,y:800},{x:0,y:800}],color:"#fa8ccc"},
 						{p:[{x:800,y:400},{x:800,y:800},{x:400,y:800}],color:"#f6ca29"}];
+						
+			for (var i = 0; i < tangram.length;i ++ ) {
+			   context.beginPath();	
+				for (var j = 0; j < tangram[i].p.length; j++) {
+					context.lineTo(tangram[i].p[j].x,tangram[i].p[j].y);
+				};		
+				context.fillStyle= tangram[i].color;
+				context.fill();
+				context.closePath();
+			};
 			
-			// 开始路径
-			context.beginPath();
-			context.lineTo(0,0);
-			context.lineTo(800,0);
-			context.lineTo(400,400);
-			
-            //结束路径bn
-			context.closePath();
-			context.fillStyle="#caff67";
-			context.fill();
-			
-			
-			// 开始路径
-			context.beginPath();
-			context.lineTo(0,0);
-			context.lineTo(400,400);
-			context.lineTo(0,800);
-			
-            //结束路径bn
-			context.closePath();
-			context.fillStyle="#67becf";
-			context.fill();
-			
-			// 开始路径
-			context.beginPath();
-			context.lineTo(800,0);
-			context.lineTo(800,400);
-			context.lineTo(600,600);
-			context.lineTo(600,200);
-            //结束路径bn
-			context.closePath();
-			context.fillStyle="#ef3d61";
-			context.fill();
-			
-			// 开始路径
-			context.beginPath();
-			context.lineTo(600,200);
-			context.lineTo(600,600);
-			context.lineTo(400,400);
-            //结束路径bn
-			context.closePath();
-			context.fillStyle="#f9f51a";
-			context.fill();
-			
-			// 开始路径
-			context.beginPath();
-			context.lineTo(400,400);
-			context.lineTo(600,600);
-			context.lineTo(400,800);
-			context.lineTo(200,600);
-            //结束路径bn
-			context.closePath();
-			context.fillStyle="#a54c09";
-			context.fill();
-			
-			
-			// 开始路径
-			context.beginPath();
-			context.lineTo(200,600);
-			context.lineTo(400,800);
-			context.lineTo(0,800);
-            //结束路径bn
-			context.closePath();
-			context.fillStyle="#fa8ccc";
-			context.fill();
-			
-			// 开始路径
-			context.beginPath();
-			context.lineTo(800,400);
-			context.lineTo(800,800);
-			context.lineTo(400,800);
-            //结束路径bn
-			context.closePath();
-			context.fillStyle="#f6ca29";
-			context.fill();
+////			// 开始路径
+//			context.beginPath();
+//			context.lineTo(0,0);
+//			context.lineTo(800,0);
+//			context.lineTo(400,400);
+//			
+////          //结束路径bn
+//			context.closePath();
+//			context.fillStyle="#caff67";
+//			context.fill();
+////			
+////			
+////			// 开始路径
+//			context.beginPath();
+//			context.lineTo(0,0);
+//			context.lineTo(400,400);
+//			context.lineTo(0,800);
+////			
+////          //结束路径bn
+//			context.closePath();
+//			context.fillStyle="#67becf";
+//			context.fill();
+//			
+////			// 开始路径
+//			context.beginPath();
+//			context.lineTo(800,0);
+//			context.lineTo(800,400);
+//			context.lineTo(600,600);
+//			context.lineTo(600,200);
+////          //结束路径bn
+//			context.closePath();
+//			context.fillStyle="#ef3d61";
+//			context.fill();
+////			
+////			// 开始路径
+//			context.beginPath();
+//			context.lineTo(600,200);
+//			context.lineTo(600,600);
+//			context.lineTo(400,400);
+////          //结束路径bn
+//			context.closePath();
+//			context.fillStyle="#f9f51a";
+//			context.fill();
+////			
+////			// 开始路径
+//			context.beginPath();
+//			context.lineTo(400,400);
+//			context.lineTo(600,600);
+//			context.lineTo(400,800);
+//			context.lineTo(200,600);
+////          //结束路径bn
+//			context.closePath();
+//			context.fillStyle="#a54c09";
+//			context.fill();
+//			
+////			
+////			// 开始路径
+//			context.beginPath();
+//			context.lineTo(200,600);
+//			context.lineTo(400,800);
+//			context.lineTo(0,800);
+//          //结束路径bn
+//			context.closePath();
+//			context.fillStyle="#fa8ccc";
+//			context.fill();
+////			
+////			// 开始路径
+//			context.beginPath();
+//			context.lineTo(800,400);
+//			context.lineTo(800,800);
+//			context.lineTo(400,800);
+////          //结束路径bn
+//			context.closePath();
+//			context.fillStyle="#f6ca29";
+//			context.fill()
 		</script>
 	</body>
 </html>
